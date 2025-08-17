@@ -1,0 +1,5 @@
+# List the tickers you want to fetch first
+tickers:
+  - MQ
+  # - AAPL
+  # - MSFT

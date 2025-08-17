@@ -1,3 +1,102 @@
-.venv/
-__pycache__/
+# =========================
+# OS / Editor cruft
+# =========================
 .DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.orig
+
+.vscode/
+.idea/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.cache/
+.ipynb_checkpoints/
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+.venv/
+venv/
+env/
+
+# =========================
+# Node / Frontend (if you add a web UI)
+# =========================
+node_modules/
+*.tsbuildinfo
+dist/
+build/
+.next/
+coverage/
+
+# If you keep a subfolder webui/
+webui/**/node_modules/
+webui/**/.next/
+webui/**/dist/
+webui/**/build/
+
+# =========================
+# Environment & secrets
+# =========================
+.env
+.env.*
+!.env.example
+*.secret*
+*.secrets*
+*.pem
+*.p12
+*.pfx
+*.key
+
+# =========================
+# Data (EDGAR-first corpus)
+# =========================
+data/edgar/raw/
+data/edgar/cache/
+data/edgar/txt/
+data/context/
+data/vc/
+data/training/
+data/validation/
+data/processed/
+
+# Allow small placeholders/docs in ignored data trees
+!data/**/.keep
+!data/**/README.md
+!data/samples/**
+!data/examples/**
+
+# =========================
+# Model artifacts / indices
+# =========================
+models/
+checkpoints/
+artifacts/
+outputs/
+plugins/knowledgevault/data/index/
+plugins/knowledgevault/data/embeddings/
+
+# =========================
+# Logs / temp files
+# =========================
+logs/
+*.log
+*.tmp
+*.temp
+*.bak
+
+# =========================
+# Tool-specific caches (HF/SBERT etc.)
+# =========================
+.hf_cache/
+.huggingface/
+.sentence_transformers/
